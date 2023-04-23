@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to TrujiLand!</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+
+
+<!-- ██████╗███████╗███████╗-->
+<!--██╔════╝██╔════╝██╔════╝-->
+<!--██║     ███████╗███████╗-->
+<!--██║     ╚════██║╚════██║-->
+<!--╚██████╗███████║███████║-->
+<!-- ╚═════╝╚══════╝╚══════╝-->
+
+	<style type="text/css">		
+		*{
+			font-family: "Comic Sans MS";
+			font-size: 20px;
+			color: #ffff;
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			background-image: url("docs/assets/test2bg.png");
+		}
+
+		header{
+			margin-top: 20px;
+		}
+
+		h1{
+			font-size: 80px;
+			display: inline;
+			font-family: "DynaPuff";
+
+			background: linear-gradient(to right, #adfffe, #add6ff, #b2adff, #d1adff, #f1adff);
+	  		-webkit-text-fill-color: transparent;
+	        -webkit-background-clip: text;
+		}
+
+		p#music{
+			color: #ffff;
+			display: inline;
+		}
+
+		p#music:hover, p#music:active {
+  			color: #e3fc03;
+  			display: inline;
+  		}
+
+  		p#tbtext{
+  			font-family: "DotGothic16";
+  			font-size:22px;
+  		}
+
+		main{
+		margin-top: 30px;
+		}
+
+		h2{
+		margin-bottom: 10px;
+		font-size: 20px;
+		font-family: "Press Start 2P"
+		}
+
+		section{
+			margin: 20px 12%;
+			background-color: rgba(0, 60, 255, 0.5);
+			color: #ffff;
+			padding: 20px 100px;
+		}
+
+		h3{
+			font-size: 22px;
+			color: white;
+		}
+
+		nav#links{
+		color: #ffff; 
+		width: 1000px;
+		height:60px;
+		background-color: rgba(40, 40, 40);
+		border: 3px solid white;
+		}
+
+		section#textbox{
+		color: #ffff; 
+		width: 30%;
+		background-color: rgba(40, 40, 40);
+		border: 3px solid white;
+		margin: 20px 12%;
+		padding: 20px 100px;
+		}
+
+		a{
+		text-align: center;
+  		text-decoration: none;
+		display: inline-block;
+		margin-top:23px;
+		margin-left: 30px;
+		margin-right:30px;
+		border-radius: 5px;
+		color: #ffff;
+		font-family: "Press Start 2P"
+		}
+
+		a:hover, a:active {
+  		color: yellow;
+  		}
+	</style>
+
+
+<!--     ██╗ █████╗ ██╗   ██╗ █████╗ -->
+<!--     ██║██╔══██╗██║   ██║██╔══██╗-->
+<!--     ██║███████║██║   ██║███████║-->
+<!--██   ██║██╔══██║╚██╗ ██╔╝██╔══██║-->
+<!--╚█████╔╝██║  ██║ ╚████╔╝ ██║  ██║-->
+<!-- ╚════╝ ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝-->
+	<script type="text/javascript">
+		var x=0;
+		function Colors(){
+			var text=["#fc0303","#fc7303","#dffc03","#03fc0f","#03fce7","#33a3ff","#0026fc","#8600fc","#fc00ca"];
+			document.getElementById("rainbow").style.color=text[x];
+			x=(x+1)%text.length;
+		}
+		setInterval (Colors,100)
+
+		function Hip(){
+		var audio = new Audio('docs/assets/Groove_Grove.mp3');
+		audio.play();
+		}
+
+	</script>
+
+
+</head>
+
+<!--██████╗  ██████╗ ██████╗ ██╗   ██╗-->
+<!--██╔══██╗██╔═══██╗██╔══██╗╚██╗ ██╔╝-->
+<!--██████╔╝██║   ██║██║  ██║ ╚████╔╝ -->
+<!--██╔══██╗██║   ██║██║  ██║  ╚██╔╝  -->
+<!--██████╔╝╚██████╔╝██████╔╝   ██║   -->
+<!--╚═════╝  ╚═════╝ ╚═════╝    ╚═╝   -->
+<body onload="Colors();">
+
+	<img src="docs/assets/dancer21.gif" height="100px" width="100px">
+	<br>
+	<p id="music" type=button onclick="Hip();" style="margin-left: 20px;">~Click for immersion~</p>
+
+	<center>
+		<header>
+				<h3>Welcome to</h3>
+				<img src="docs/assets/blinktest.gif" height="64px" width="64px">
+				<h1>TrujiLand</h1>
+				<img src="docs/assets/blinktest.gif" height="64px" width="64px" style="transform: scaleX(-1);">
+		</header>
+
+		<br>
+
+		<nav id="links">
+			<a href="index.html">Home</a>
+			<a href="fun_stuff.html">Fun Stuff</a>
+			<a href="index.html">About Me</a>
+			<a href="index.html">Credits</a>
+		</nav>
+	</center>
+
+	<main>
+		<center>
+			<section id="textbox">
+				<center>
+						<h2 id="rainbow">Welcome to my site!</h2>
+					<br>
+					<p id="tbtext">This is the place where I plan to post some general info about myself, the projects I'm working on or worked on and some neat fun stuff too! You can click on the bar above to check out the rest of the site's pages. Though, only the "fun stuff" section is working right now  and clicking "Home" will send you back to this page :P</p>
+					<br>
+					<p>(Is this font annoying? google doesn't have many great options for pixelated fonts >~<)</p>
+					<br><br>
+					<p id="tbtext" style="font-size: 16px;">Also, be careful not to click for immersion more than once! it will become very annoying!</p>
+					<br><br><br><br><br><br><br>
+					<img src="docs/assets/bunny.gif"> <p id="tbtext" style="font-size: 10px">I found this bunny in the trash! it's the site's pet now!</p>
+				</center>
+			</section>
+		</center>
+		<marquee direction="right" scrollamount="40" style="color: #ffff">Look at this awesome fucking scrolling text!</marquee>
+	</main>
+</body>
+</html>
